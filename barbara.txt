@@ -4,3 +4,31 @@ public:
         
     }
 };
+
+
+/*
+Bruteforce:
+1. pick every element in an array and add it with every other element ahead of the element picked
+2. after every add, check if the sum is equal to target.
+3. if yes, theres the solution then return
+4. if no, pick next and add with all the elements ahead.
+
+
+2,7,11,15, target=9
+i=0<size -1
+//j=0, <size
+//two reason
+i=0,j=0, 2+2 same element
+i=1, j=0, 7+2
+j= i+1 <size
+2+7=9, res=0,1
+2+11
+2+15
+
+
+7+11
+7+15
+
+11+15
+time complexity : 0(n ^2)
+
